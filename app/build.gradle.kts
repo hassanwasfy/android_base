@@ -52,6 +52,8 @@ dependencies {
     implementation(Deps.navUi)
     implementation(Deps.navDynamic)
 
+ implementation(Deps.navDynamic)
+
     implementation(Deps.hiltAndroid)
     kapt(Deps.hiltCompiler)
 }
