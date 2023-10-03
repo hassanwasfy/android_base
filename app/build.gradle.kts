@@ -53,7 +53,7 @@ dependencies {
     implementation(Deps.navDynamic)
 
     implementation(Deps.hiltAndroid)
-    implementation(Deps.hiltCompiler)
+    kapt(Deps.hiltCompiler)
 }
 
 kapt {
