@@ -96,7 +96,7 @@ object Deps {
     val navDynamic = "androidx.navigation:navigation-dynamic-features-fragment:$navVersion"
     //sdp
     val sdb = "com.intuit.sdp:sdp-android:1.0.6"
-    val ssp "com.intuit.ssp:ssp-android:1.1.0"
+    val ssp = "com.intuit.ssp:ssp-android:1.1.0"
     //view
     val glide = "com.github.bumptech.glide:glide:4.11.0"
     val material = "com.github.rey5137:material:1.3.1"
