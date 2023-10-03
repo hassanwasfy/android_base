@@ -52,7 +52,12 @@ dependencies {
     implementation(Deps.navUi)
     implementation(Deps.navDynamic)
 
- implementation(Deps.navDynamic)
+
+    implementation(Deps.sdb)
+    implementation(Deps.ssp)
+    implementation(Deps.glide)
+    implementation(Deps.materialrey)
+    implementation(Deps.dexter)
 
     implementation(Deps.hiltAndroid)
     kapt(Deps.hiltCompiler)
