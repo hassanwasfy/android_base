@@ -99,7 +99,7 @@ object Deps {
     val ssp = "com.intuit.ssp:ssp-android:1.1.0"
     //view
     val glide = "com.github.bumptech.glide:glide:4.11.0"
-    val material = "com.github.rey5137:material:1.3.1"
+    val materialrey = "com.github.rey5137:material:1.3.1"
     val dexter = "com.karumi:dexter:6.2.3"
     
 }
