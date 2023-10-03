@@ -90,4 +90,8 @@ object Deps {
     val okhttp3Logging = "com.squareup.okhttp3:logging-interceptor:4.11.0"
     val okhttp3 = "com.squareup.okhttp3:okhttp:4.11.0"
     val retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
+    //xml navigation
+    val navFrag = "androidx.navigation:navigation-fragment-ktx:$navVersion"
+    val navUi = "androidx.navigation:navigation-ui-ktx:$navVersion"
+    val navDynamic = "androidx.navigation:navigation-dynamic-features-fragment:$navVersion"
 }

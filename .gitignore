@@ -35,6 +35,7 @@ app/.externalNativeBuild
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/vcs.xml
+.idea/kotlinc.xml
 
 # Local configuration file (e.g., local.properties)
 local.properties

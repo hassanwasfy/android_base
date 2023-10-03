@@ -2,6 +2,8 @@ import com.deshanddez.deshndezz_android.Deps
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -45,4 +47,15 @@ dependencies {
     testImplementation(Deps.junit)
     androidTestImplementation(Deps.junitExt)
     androidTestImplementation(Deps.espresso)
+
+    implementation(Deps.navFrag)
+    implementation(Deps.navUi)
+    implementation(Deps.navDynamic)
+
+    implementation(Deps.hiltAndroid)
+    implementation(Deps.hiltCompiler)
+}
+
+kapt {
+    correctErrorTypes = true
 }
