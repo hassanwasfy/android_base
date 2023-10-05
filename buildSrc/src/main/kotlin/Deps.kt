@@ -5,6 +5,7 @@ object Deps {
     val espresso = "androidx.test.espresso:espresso-core:3.5.1"
     val kotlinxCourotines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
     val activityCompose = "androidx.activity:activity-compose:1.7.2"
+    val activityKtx = "androidx.activity:activity-ktx:1.7.2"
     val coreKtx = "androidx.core:core-ktx:1.10.1"
     val junit = "junit:junit:4.13.2"
     val junitExt = "androidx.test.ext:junit-ktx:1.1.5"
@@ -101,5 +102,9 @@ object Deps {
     val glide = "com.github.bumptech.glide:glide:4.11.0"
     val materialrey = "com.github.rey5137:material:1.3.1"
     val dexter = "com.karumi:dexter:6.2.3"
-    
+    val gmsAuth = "com.google.android.gms:play-services-auth:20.7.0"
+    val phoneNum = "com.googlecode.libphonenumber:libphonenumber:8.12.32"
+    val kotlinStd = "org.jetbrains.kotlin:kotlin-stdlib:1.9.10"
+    val serialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1"
+
 }
