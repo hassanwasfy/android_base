@@ -16,8 +16,6 @@ captures/
 app/*/build/
 buildSrc/build/
 release-*/
-gradle-wrapper.jar
-gradle-wrapper.properties
 
 # Android Studio files
 /.DS_Store
