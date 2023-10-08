@@ -1,5 +1,3 @@
-import com.deshanddez.deshndezz_android.Deps
-
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
@@ -8,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.deshanddezz.base"
+    namespace = "com.lock.base"
     compileSdk = 33
 
     defaultConfig {
-        minSdk = 24
+        minSdk = 28
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -28,30 +26,37 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
-        dataBinding = true
+        viewBinding = true
         buildConfig = true
     }
 }
 
 dependencies {
 
-    implementation(Deps.coreKtx)
-    implementation(Deps.appCompat)
-    implementation(Deps.material)
-    implementation(Deps.constraintXml)
-    testImplementation(Deps.junit)
-    androidTestImplementation(Deps.junitExt)
-    androidTestImplementation(Deps.espresso)
-    implementation(Deps.hiltAndroid)
-    kapt(Deps.hiltCompiler)
+    implementation(com.deshanddez.deshndezz_android.Deps.coreKtx)
+    implementation(com.deshanddez.deshndezz_android.Deps.appCompat)
+    implementation(com.deshanddez.deshndezz_android.Deps.material)
+    implementation(com.deshanddez.deshndezz_android.Deps.constraintXml)
+    testImplementation(com.deshanddez.deshndezz_android.Deps.junit)
+    androidTestImplementation(com.deshanddez.deshndezz_android.Deps.junitExt)
+    androidTestImplementation(com.deshanddez.deshndezz_android.Deps.espresso)
+
+    implementation(com.deshanddez.deshndezz_android.Deps.activityKtx)
+    implementation(com.deshanddez.deshndezz_android.Deps.navFrag)
+    implementation(com.deshanddez.deshndezz_android.Deps.kotlinxCourotines)
+    implementation(com.deshanddez.deshndezz_android.Deps.hiltAndroid)
+    kapt(com.deshanddez.deshndezz_android.Deps.hiltCompiler)
+    implementation(project(":data"))
+
 }
+
 kapt {
     correctErrorTypes = true
 }
