@@ -67,7 +67,6 @@ dependencies {
     kapt(Deps.hiltCompiler)
 
 
-    implementation(project(":utils"))
 }
 
 kapt {
