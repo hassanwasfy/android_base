@@ -66,10 +66,7 @@ dependencies {
     implementation(Deps.hiltAndroid)
     kapt(Deps.hiltCompiler)
 
-    implementation(project(":data"))
-    implementation(project(":domain"))
-    implementation(project(":base"))
-    implementation(project(":di"))
+
     implementation(project(":utils"))
 }
 

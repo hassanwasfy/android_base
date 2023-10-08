@@ -1,9 +1,10 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
+    val agp_version by extra("8.1.1")
     dependencies {
         classpath("com.google.dagger:hilt-android-gradle-plugin:2.47")
-        classpath ("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21")
-        classpath ("com.android.tools.build:gradle:4.2.2")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21")
+        classpath("com.android.tools.build:gradle:$agp_version")
 
     }
     repositories {
