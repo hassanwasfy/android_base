@@ -15,3 +15,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "deshNdezz_android"
 include(":app")
+include(":data")
+include(":domain")
+include(":di")
