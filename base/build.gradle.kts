@@ -50,6 +50,9 @@ dependencies {
     androidTestImplementation(Deps.junitExt)
     androidTestImplementation(Deps.espresso)
 
+    implementation(Deps.lifecycleRuntimeKtx)
+    implementation(Deps.lifecycleViewModelKts)
+
     implementation(Deps.hiltAndroid)
     kapt(Deps.hiltCompiler)
 

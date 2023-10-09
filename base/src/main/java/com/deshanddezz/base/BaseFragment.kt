@@ -16,7 +16,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.deshanddezz.base.databinding.ErrorDialogBinding
-import com.deshanddezz.data.NetWorkState
+import com.deshanddezz.data.NetworkState
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.SharedFlow
@@ -96,7 +96,7 @@ abstract class BaseFragment(private val layout: Int) : Fragment() {
     }
 
     fun Fragment.handleSharedFlow(
-        userFlow: SharedFlow<NetWorkState>,
+        userFlow: SharedFlow<NetworkState>,
         lifeCycle: Lifecycle.State = Lifecycle.State.STARTED,
         onShowProgress: () -> Unit = {},
         onHideProgress: () -> Unit = {},
@@ -107,11 +107,11 @@ abstract class BaseFragment(private val layout: Int) : Fragment() {
             repeatOnLifecycle(lifeCycle) {
                 userFlow.collect { networkState ->
                     when (networkState) {
-                        is NetWorkState.Success<*> -> {
+                        is NetworkState.Success<*> -> {
                             onSuccess(networkState.data!!)
                         }
 
-                        is NetWorkState.Error -> {
+                        is NetworkState.Error -> {
 
                         }
 
