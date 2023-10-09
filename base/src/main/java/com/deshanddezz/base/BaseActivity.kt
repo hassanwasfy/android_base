@@ -82,5 +82,3 @@ abstract class BaseActivity(private val layoutResource: Int) : AppCompatActivity
         }
     }
 }
-
-data class CustomErrorThrow(val key: String, val value: String) : Throwable()
