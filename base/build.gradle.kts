@@ -52,6 +52,8 @@ dependencies {
 
     implementation(Deps.hiltAndroid)
     kapt(Deps.hiltCompiler)
+
+    implementation(project(":data"))
 }
 
 kapt {
